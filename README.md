@@ -6,7 +6,7 @@
 
 https://kamalbanga.github.io/datascience/
 
-# My Blog
+# Notes on Datascience
 
 
 _powered by [fastpages](https://github.com/fastai/fastpages)_
