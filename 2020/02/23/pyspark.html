@@ -80,7 +80,7 @@
     •<span class="read-time" title="Estimated read time">
     
     
-      32 min read
+      31 min read
     
 </span></p>
 
@@ -6810,20 +6810,6 @@ only showing top 5 rows
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://ap-southeast-1.console.aws.amazon.com/elasticmapreduce/home?region=ap-southeast-1">EMR Console</a></p>
-<p>Command to create an AWS EMR cluster,</p>
-<p><code>aws emr create-cluster --name 'EMR test' --ec2-attributes KeyName=datascience-adhoc,AvailabilityZone=ap-southeast-1a --release-label emr-5.22.0 --applications Name=Spark --instance-groups InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large InstanceGroupType=CORE,InstanceCount=1,InstanceType=m4.large --use-default-roles</code></p>
-<p>this returns a <em>ClusterId</em> like "j-33BGK7M3S030C"</p>
-<p>To ssh to this cluster,</p>
-<p><code>aws emr ssh --key-pair-file ~/credentials/datascience-adhoc.pem --cluster-id j-33BGK7M3S030C</code></p>
-<p>To terminate the cluster,</p>
-<p><code>aws emr terminate-clusters --cluster-ids j-33BGK7M3S030C</code></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Resources">Resources<a class="anchor-link" href="#Resources">&#182;</a></h3><ul>
 <li><a href="http://shop.oreilly.com/product/9780596510046.do">http://shop.oreilly.com/product/9780596510046.do</a></li>
 <li><a href="https://www.usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean.pdf">https://www.usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean.pdf</a></li>
@@ -6905,45 +6891,6 @@ The idea of connecting programs with pipes became known as the Unix philosophy</
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Scratch">Scratch<a class="anchor-link" href="#Scratch">&#182;</a></h4>
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sc</span><span class="o">.</span><span class="n">parallelize</span><span class="p">([(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span><span class="o">.</span><span class="n">values</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>3</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
 </div>
 
 
